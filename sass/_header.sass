@@ -1,0 +1,35 @@
+.header
+    height: 100px
+    background-color: #000
+
+    &__container
+        height: 100%
+        display: flex
+        align-items: center
+
+.logo
+    max-width: 160px
+    margin-right: auto
+    font-size: 0
+    transition: transform .3s linear
+    &:hover
+        transform: scale(1.1, 1.1)
+
+.logo__img
+    max-width: 100%
+    height: auto
+    transform: translateY(-10px)
+
+.nav__list
+    display: flex
+    align-items: center
+
+.nav__item:not(:last-child)
+    margin-right: 30px
+
+.nav__link
+    font-weight: bold
+    transition: transform .3s linear
+
+.nav__link:hover
+    transform: scale(1.1, 1.1)

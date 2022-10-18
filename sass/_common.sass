@@ -1,0 +1,69 @@
+
+*, *::before, *::after
+    box-sizing: border-box
+
+h1,h2,h3,h4,h5,h6,p
+    margin: 0
+
+body
+    font-family: 'Silkscreen', Arial, Helvetica, sans-serif
+    font-size: 16px
+    color: #12d318
+
+.main
+    position: relative
+    min-height: 100vh
+    background: url('/img/rick-n-morty-bg.jpeg')
+    background-size: contain
+
+    &:after
+        content: ''
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background-color: #000
+        opacity: .7
+        z-index: 1
+
+ul
+    padding: 0
+    list-style: none
+
+a
+    display: inline-block
+    text-decoration: none
+    color: inherit
+
+.container
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 15px
+
+.title
+    margin-bottom: 30px
+    font-size: 45px
+    text-transform: uppercase
+    font-weight: bold
+    text-align: center
+
+.btn
+    display: inline-block
+    margin-bottom: 30px
+    padding: 15px 28px
+    font-size: 18px
+    font-weight: 600
+    line-height: 1
+    border: none
+    border-radius: 10px
+    cursor: pointer
+    background-color: #fbff00
+    color: #12d318
+    transition: transform .3s ease-in-out
+    &:hover
+        transform: scale(1.1, 1.1)
+
+.section
+    position: relative
+    z-index: 2

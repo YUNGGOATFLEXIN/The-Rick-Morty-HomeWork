@@ -1,0 +1,258 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+body {
+  font-family: "Silkscreen", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #12d318;
+}
+
+.main {
+  position: relative;
+  min-height: 100vh;
+  background: url("/img/rick-n-morty-bg.jpeg");
+  background-size: contain;
+}
+.main:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 15px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #fbff00;
+  color: #12d318;
+  transition: transform 0.3s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.section {
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  height: 100px;
+  background-color: #000;
+}
+.header__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 160px;
+  margin-right: auto;
+  font-size: 0;
+  transition: transform 0.3s linear;
+}
+.logo:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.logo__img {
+  max-width: 100%;
+  height: auto;
+  transform: translateY(-10px);
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav__link {
+  font-weight: bold;
+  transition: transform 0.3s linear;
+}
+
+.nav__link:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.intro {
+  padding-top: 70px;
+}
+.intro__title {
+  font-size: 40px;
+  font-weight: bold;
+}
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro__background {
+  max-width: 600px;
+}
+
+.characters {
+  margin-bottom: 50px;
+}
+.characters__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.characters__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  row-gap: 20px;
+}
+.characters__card {
+  display: flex;
+  flex: 0 1 50%;
+  padding: 0 15px;
+}
+.characters__content {
+  width: 100%;
+  display: flex;
+  border-radius: 12px;
+  background-color: rgba(255, 247, 0, 0.2784313725);
+}
+.characters__info {
+  padding: 20px;
+  font-size: 16px;
+}
+.characters__name {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.characters__status {
+  margin-bottom: 10px;
+}
+.characters__species {
+  margin-bottom: 10px;
+}
+.characters__gender {
+  display: inline-block;
+  font-size: 16px;
+}
+.characters__img {
+  max-width: 150px;
+  height: auto;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.is-active {
+  display: none;
+}
+
+.location {
+  margin-bottom: 50px;
+}
+.location__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.location__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+.location__card {
+  padding-left: 50px;
+  flex: 0 1 33.333%;
+  background: url("/img/location.svg") top left no-repeat;
+  background-size: 40px;
+}
+.location__name {
+  margin-bottom: 10px;
+}
+
+.is-active {
+  display: none;
+}
+
+.episodes {
+  padding-bottom: 40px;
+}
+.episodes__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.episodes__list {
+  display: flex;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+.episodes__card {
+  flex: 0 1 50%;
+}
+.episodes__name {
+  margin-bottom: 10px;
+}
+.episodes__date {
+  margin-bottom: 10px;
+}
+
+.is-active {
+  display: none;
+}
+
+.footer {
+  height: 100px;
+  background-color: #000;
+}
+.footer__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
